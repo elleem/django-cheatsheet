@@ -26,8 +26,27 @@ stop webserver
 
 `tree`
 
-add the name things to INSTALLED_APPS = [
+add the string things to `settings.py` `INSTALLED_APPS = [
 'things'
-]
+]`
+
+start in `views.py`
+
+`python -m pip install django-compressor`
+
+add it to installed apps in `settings.py`
+
+`npm install -D tailwindcss`
+
+`npx tailwindcsss init`
+
+creates the config file tailwind.config.js
+
+make sure `node_modules` is in gitignore
+
+`npx tailwindcss -i ./static/src/input.css -o ./static/src/input.css --watch`
+
+`npm install flowbite`
+
 
 
