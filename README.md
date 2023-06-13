@@ -1,22 +1,24 @@
-`python3.11 -m venv .venv`
+create folder `mkdir django-things`
+
+install virtual environment `python3.11 -m venv .venv`
 
 `source .venv/bin/activate`
 
-`mkdir django-things`
-
 `pip install django`
 
-`django-admin startproject django_things_project .` (period will install it into the folder) 
+`django-admin startproject django_things_project .` 
+
+(command, name of project, period will install it into the folder(otherwise double folders)) 
 
 `tree`
 
-settings.py all boilerplate in Django, configuration constants
+`python manage.py migrate`
+
+`settings.py` all boilerplate in Django, configuration constants
 
 `python manage.py runserver`
 
 check the port, quit the serve with control c, before installing the updates
-
-`python manage.py migrate`
 
 refresh to see the tables, apply and hit okay w/in db.sqlite3
 
@@ -30,7 +32,23 @@ add the string things to `settings.py` `INSTALLED_APPS = [
 'things'
 ]`
 
-start in `views.py`
+Now the project knows about the app. You can start working on your app
+
+start in `views.py` with the TemplateView module
+
+next create `urls.py`
+
+this is where the routes will be
+
+now update the `urls.py` inside of the project, including everything inside yourprojectname.url in the app
+
+adds template folder, add `base.html` and `home.html`
+
+emment character in `base.html` and then add in the block/end block
+
+in home.html add in extends
+
+be sure to add your relative path name to templates directory inside the lists, `BASE_DIR/'templates'`
 
 `python -m pip install django-compressor`
 
