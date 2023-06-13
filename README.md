@@ -50,21 +50,31 @@ in home.html add in extends
 
 be sure to add your relative path name to templates directory inside the lists, `BASE_DIR/'templates'`
 
+##### Tailwind
+
 `python -m pip install django-compressor`
 
-add it to installed apps in `settings.py`
+add it to installed apps in `settings.py` as a string 'compressor'
 
 `npm install -D tailwindcss`
 
-`npx tailwindcsss init`
+`npx tailwindcss init`
 
 creates the config file tailwind.config.js
 
-make sure `node_modules` is in gitignore
+make sure `node_modules` is in .gitignore
 
 `npx tailwindcss -i ./static/src/input.css -o ./static/src/input.css --watch`
 
 `npm install flowbite`
 
+server and tailwindcss watch need to be running in separate tabs
 
+inside the app, `tests.py`
+
+`from django.urls import reverse`
+
+`from djano.test import SimpleTestCase`
+
+run via `python manage.py test`
 
