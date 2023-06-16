@@ -64,7 +64,7 @@ creates the config file tailwind.config.js
 
 make sure `node_modules` is in .gitignore
 
-`npx tailwindcss -i ./static/src/input.css -o ./static/src/input.css --watch`
+`npx tailwindcss -i ./static/src/input.css -o ./static/src/output.css --watch`
 
 `npm install flowbite`
 
@@ -78,3 +78,11 @@ inside the app, `tests.py`
 
 run via `python manage.py test`
 
+`python manage.py createsuperuser`
+
+register your `models.py` into `admin.py`
+
+`python manage.py makemigrations`
+every time you change `models.py`, run above, the ORM needs to turn that into SQL
+
+`python manage.py migrate`
